@@ -8,8 +8,8 @@ router.get('/:id', async (req, res, next) => {
     try {
         const blog = await BlogService.getById(id);
         return res.status(200).json({ blog });
-    } catch {
-        return res.status(500).json({ error: e.mesage });
+    } catch (e) {
+        return res.status(500).json({ error: e.message });
     }
 });
 
