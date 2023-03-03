@@ -7,7 +7,7 @@ const routeHandler = require('./src/routes');
 const app = express();
 
 dotenv.config();
-const { mongodbOptions } = require('./config');
+const { mongodbOptions } = require('./src/config');
 
 const { PORT, HOST, MONGODB_DEV, MONGODB_PROD, ENV_MODE } = process.env;
 
